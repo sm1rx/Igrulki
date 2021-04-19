@@ -1,0 +1,218 @@
+body {
+	margin: 0;
+	font-family: 'Baloo Paaji 2', cursive;
+	
+	font-size: 15px;
+	line-height: 1.6;
+	color: #FFFF00;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.intro {
+	width: 100%;
+	height: 100vh;
+
+	background: url("../pictures/intro.jpg") center 
+	no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+/* header*/
+.header {
+	width: 100%;
+	padding-top: 30px;
+	position: absolute;
+	top: 0;
+	left:0;
+	right: 0;
+	z-index: 1000;
+	margin-bottom: 40px;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo {
+	font-size: 80px;
+	font-weight: 600;
+	color: red;
+	font-family: 'Indie Flower', cursive; 
+}
+
+/*nav*/
+.nav {
+	text-transform: uppercase;
+}
+
+.nav__link {
+	font-size: 40px;
+	position: relative;
+	color: #7CFC00;
+	text-decoration: none;
+	
+}
+.nav__link:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	display: none;
+
+	background-color: #FFD700;
+	
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+}
+
+.nav__link:hover {
+	color: #FFD700;
+}
+
+.nav__link:hover:after {
+	display: block;
+}
+
+.nav__link2 {
+	display: flex;
+	flex-direction: row-reverse;
+	text-decoration: none;
+	color: #E6E6FA;
+	background:#8B0000;
+}
+
+.nav1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav2 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav2__link2 {
+	font-size: 40px;
+	color: #7CFC00;
+	text-decoration: none;
+}
+
+/* menu общее оформление*/
+.dws-menu *{
+	margin: 0;
+	padding: 0;
+}
+
+.dws-menu ul,
+.dws-menu ol{
+	list-style: none;
+}
+
+.dws-menu > ul{
+	display: flex;
+} 
+
+.dws-menu > ul li a{
+	display: block;
+	background: #FFFF00;
+	padding: 20px 20px 20px;
+	font-size: 23px;
+	color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.3s ease;
+}
+
+.dws-menu > ul li{
+	position: relative;
+	border-left: 3px solid #800000;
+}
+
+.dws-menu > ul li > a i.fa{
+	position: absolute;
+	top: 25px;
+	left: 1px;
+	font-size: 20px;
+}
+
+.dws-menu > ul li:first-child{
+	border-left: 3px solid #800000;
+}
+
+.dws-menu > ul li:last-child{
+	border-right: 3px solid #800000;
+}
+
+/*menu стили при наведении*/
+
+.dws-menu li a:hover{
+	background: #FFA500;
+	box-shadow: 3px 3px 3px yellow;
+	transition: all 0.3s ease;
+}
+
+
+/*sub menu*/
+.dws-menu li ul{
+	position: absolute;
+	min-width: 150px;
+	display: none;
+}
+
+.dws-menu li > ul li{
+	border: 3px solid #800000;
+}
+
+.dws-menu li > ul li a{
+	padding: 10px;
+	text-transform: none;
+}
+
+.dws-menu li > ul li ul{
+	position: absolute;
+	right: -150px;
+	top: 0;
+}
+.dws-menu li:hover > ul{
+	display: block;
+}
+
+/*tanki*/
+.tanki {
+	padding-top: 400px;
+	padding-left: 600px
+}
+/*footer*/
+.footer{
+	padding-top: 50px;
+}
+.nav3{
+	display: flex;
+	align-items: center;
+}
+
+.nav__link3{
+	font-size: 20px;
+	color: #7CFC00;
+	text-decoration: none;
+}
